@@ -6,8 +6,6 @@ library(meme)
 library(here)
 library(rtweet)
 setwd(here())
-#read('dictionary.json.txt')
-#json_file <- "http://api.worldbank.org/country?per_page=10&region=OED&lendingtype=LNX&format=json"
 json_data <- fromJSON(paste(readLines('dictionary.json.txt'), collapse=""))
 twitter_token <- readRDS('twitter_token.rds')
 wait_in_r <- TRUE
