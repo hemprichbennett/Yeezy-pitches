@@ -9,7 +9,7 @@ setwd(here())
 json_data <- fromJSON(paste(readLines('dictionary.json.txt'), collapse=""))
 twitter_token <- readRDS('twitter_token.rds')
 wait_in_r <- TRUE
-wait_duration <- 211*60 #Number of seconds to wait
+wait_duration <- 11.3*60*60 #Number of seconds to wait
 
 a <- F
 while(a==F){
